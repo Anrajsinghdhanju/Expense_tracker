@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Expense_Tracker</title>
+</head>
+<body>
+    <header>
+        <h1>$ Expense Tracker $</h1>
+    </header>
+    
+    <div class="container">
+        <h2>Add Expense</h2>
+        <form id="Toadd">
+            <input type="text" id="text" placeholder="Enter Expense" required>
+            <input type="number" id="number" placeholder="Enter Amount" required>
+            <input type="date" id="date" required>
+            <select name="forwhat" id="forwhat" required>
+                <option value="Expense Category">Expense Category</option>
+                <option value="Grocery">Grocery 🥦</option>
+                <option value="Food">Food 🥡</option>
+                <option value="Transport">Transport 🚌</option>
+                <option value="Entertainment">Entertainment 🍿</option>
+                <option value="Travel">Travel ✈️</option>
+                <option value="Unnecessary">Unnecessary 👫</option>
+            </select>
+            <br>
+            <button id="Done" type="submit">Add Expense</button>
+        </form>
+    </div>
+    <div id="Todisplay">
+        <h2>Expense list</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Expense</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Category</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="expenses"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
